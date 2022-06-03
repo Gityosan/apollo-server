@@ -17,7 +17,8 @@ enum TodoStatus {
 
 // テーブル定義
 model Todo {
-  id          Int        @id @default(autoincrement())
+  id          String     @id @default(uuid())
+  name        String?
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
   title       String     @db.VarChar(255)
@@ -28,7 +29,8 @@ model Todo {
 }
 
 model User {
-  id    String  @id @unique
+  id    String  @id @default(uuid())
   name  String?
+  email String?
   todos Todo[]
 }

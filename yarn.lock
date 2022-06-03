@@ -739,6 +739,17 @@
     tslib "~2.4.0"
     unixify "^1.0.0"
 
+"@graphql-tools/graphql-file-loader@^7.3.14":
+  version "7.3.14"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-7.3.14.tgz#588a71272872f67de1ad4a0258709929b875a92d"
+  integrity sha512-BuzHyfml0SMxJuzHGO1Bl9kx6e6qrAyy47KNKOOpot3E0YYnQL53zCYCDQJ+sYjZIrE7Qi4wnMVHb44+juqN+g==
+  dependencies:
+    "@graphql-tools/import" "6.6.16"
+    "@graphql-tools/utils" "8.6.12"
+    globby "^11.0.3"
+    tslib "~2.4.0"
+    unixify "^1.0.0"
+
 "@graphql-tools/graphql-tag-pluck@7.2.7":
   version "7.2.7"
   resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-7.2.7.tgz#c137a3460898c7f82fcab20b958010637009a9b1"
@@ -756,6 +767,15 @@
   integrity sha512-XN6swtMdUxd9czmdNIK6yJ0w5t4FOUWSoSkYP0+to8j44r8zdM3nsAppoA0OLmsUY+JnTBgkW3jGlOFvqC3HWg==
   dependencies:
     "@graphql-tools/utils" "8.6.10"
+    resolve-from "5.0.0"
+    tslib "~2.4.0"
+
+"@graphql-tools/import@6.6.16":
+  version "6.6.16"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.6.16.tgz#f4c68fd2427e29512fe32a868bda9a1a012fd0d4"
+  integrity sha512-IKQMKysNL2Pq+aFpR28N9F7jGAUSRYS9q0RRwl9Ocr4UofqQDmUboECM9BiYUDmT3/h7dQTimb0tdNqHP+QCjA==
+  dependencies:
+    "@graphql-tools/utils" "8.6.12"
     resolve-from "5.0.0"
     tslib "~2.4.0"
 
@@ -779,12 +799,30 @@
     p-limit "3.1.0"
     tslib "~2.4.0"
 
+"@graphql-tools/load@^7.5.13":
+  version "7.5.13"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.5.13.tgz#6d861f79e5b1197ff01bc581fa598b1bc0cf9ffc"
+  integrity sha512-GQ/RyVZUUVfxJ8jEg2sU0WK5i5VR7WLxMutbIvkYP3dcf1QpXSmQvCDP97smfJA34SYlkGUTP/B3PagfnAmhqQ==
+  dependencies:
+    "@graphql-tools/schema" "8.3.13"
+    "@graphql-tools/utils" "8.6.12"
+    p-limit "3.1.0"
+    tslib "~2.4.0"
+
 "@graphql-tools/merge@8.2.11", "@graphql-tools/merge@^8.2.6":
   version "8.2.11"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.11.tgz#0cdc6c9feb32e3392bf0c633881a78ccc1d24368"
   integrity sha512-fsjJVdsk9GV1jj1Ed2AKLlHYlsf0ZadTK8X5KxFRE1ZSnKqh56BLVX93JrtOIAnsiHkwOK2TC43HGhApF1swpQ==
   dependencies:
     "@graphql-tools/utils" "8.6.10"
+    tslib "~2.4.0"
+
+"@graphql-tools/merge@8.2.13":
+  version "8.2.13"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.13.tgz#d4f254dcea301ce3d9c23b03eb68a7ae9baf6981"
+  integrity sha512-lhzjCa6wCthOYl7B6UzER3SGjU2WjSGnW0WGr8giMYsrtf6G3vIRotMcSVMlhDzyyMIOn7uPULOUt3/kaJ/rIA==
+  dependencies:
+    "@graphql-tools/utils" "8.6.12"
     tslib "~2.4.0"
 
 "@graphql-tools/merge@8.2.7":
@@ -857,6 +895,16 @@
     tslib "~2.4.0"
     value-or-promise "1.0.11"
 
+"@graphql-tools/schema@8.3.13", "@graphql-tools/schema@^8.3.13":
+  version "8.3.13"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.13.tgz#099460459d7821dd8deb34952900fe300085ba0b"
+  integrity sha512-e+bx1VHj1i5v4HmhCYCar0lqdoLmkRi/CfV07rTqHR6CRDbIb/S/qDCajHLt7FCovQ5ozlI5sRVbBhzfq5H0PQ==
+  dependencies:
+    "@graphql-tools/merge" "8.2.13"
+    "@graphql-tools/utils" "8.6.12"
+    tslib "~2.4.0"
+    value-or-promise "1.0.11"
+
 "@graphql-tools/schema@8.3.7", "@graphql-tools/schema@^8.0.0":
   version "8.3.7"
   resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.7.tgz#6e2be8e17a1f97f4d11d5b787c414ec29400fde2"
@@ -892,6 +940,13 @@
   version "8.6.10"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.6.10.tgz#38e42a97a74ffcf5a21e816401e2ca1647194f6a"
   integrity sha512-bJH9qwuyM3BP0PTU6/lvBDkk6jdEIOn+dbyk4pHMVNnvbJ1gZQwo62To8SHxxaUTus8OMhhVPSh9ApWXREURcg==
+  dependencies:
+    tslib "~2.4.0"
+
+"@graphql-tools/utils@8.6.12":
+  version "8.6.12"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.6.12.tgz#0a550dc0331fd9b097fe7223d65cbbee720556e4"
+  integrity sha512-WQ91O40RC+UJgZ9K+IzevSf8oolR1QE+WQ21Oyc2fgDYYiqT0eSf+HVyhZr/8x9rVjn3N9HeqCsywbdmbljg0w==
   dependencies:
     tslib "~2.4.0"
 
@@ -3406,6 +3461,11 @@ inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+inherits@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+  integrity sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==
+
 ini@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
@@ -4492,6 +4552,14 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -4530,6 +4598,11 @@ prisma@^3.12.0:
   integrity sha512-ltCMZAx1i0i9xuPM692Srj8McC665h6E5RqJom999sjtVSccHSD8Z+HSdBN2183h9PJKvC5dapkn78dd0NWMBg==
   dependencies:
     "@prisma/engines" "3.12.0-37.22b822189f46ef0dc5c5b503368d1bee01213980"
+
+process@^0.11.1:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
 progress@^2.0.0:
   version "2.0.3"
@@ -5507,6 +5580,13 @@ util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+util@^0.10.3:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
+  integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
+  dependencies:
+    inherits "2.0.3"
 
 utils-merge@1.0.1:
   version "1.0.1"

@@ -1,7 +1,11 @@
-import {books} from '../data/index';
+import {Resolvers} from '../types/generated/graphql';
+import * as mutation from './mutation';
+import * as query from './query';
+import {dateScalar} from './scalar/date';
+
 // リゾルバーの定義
-export const resolvers = {
-  Query: {
-    books: () => books,
-  },
+export const resolvers: Resolvers = {
+  Query: query,
+  Mutation: mutation,
+  Date: dateScalar,
 };
